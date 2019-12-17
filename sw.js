@@ -11,10 +11,9 @@ const cacheName='cache-v1';
 const resourcesToPrecache=[
     '/',
     'index.html',
-    'style.css',
-    'script.js',
-    'icon.png',
-    'icon1.png'
+    'css/index.css',
+    'js/index.js',
+    'logo.png'
 ];
 self.addEventListener('install',event=>{
     console.log('service worker install event');

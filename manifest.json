@@ -1,20 +1,20 @@
 {
-    "short_name": "Calculator",
-    "name": "Calculator",
+    "short_name": "Healthcare",
+    "name": "Healthcare",
     "description": "Calculate Basic Math",
     "icons": [
       {
-        "src": "icon.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "icon1.png",
+        "src": "logo.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
-    "start_url": "https://mycalc.tk",
+    "start_url": "https://rakesh-m-r.github.io/hc/",
     "background_color": "rgb(118, 235, 40)",
     "display": "standalone",
     "scope": "/",
