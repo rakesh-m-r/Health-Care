@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('https://rakesh-m-r.github.io/hc/sw.js')
       .then(reg=>{
         console.log('Registered',reg);
       }).catch(err=>{
