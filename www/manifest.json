@@ -1,0 +1,22 @@
+{
+    "short_name": "Calculator",
+    "name": "Calculator",
+    "description": "Calculate Basic Math",
+    "icons": [
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icon1.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "https://mycalc.tk",
+    "background_color": "rgb(118, 235, 40)",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "rgb(118, 235, 40)"
+  }
