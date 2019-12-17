@@ -13,7 +13,8 @@ const resourcesToPrecache=[
     'index.html',
     'index.css',
     'index.js',
-    'logo.png'
+    'logo.png',
+    'bg.jpg'
 ];
 self.addEventListener('install',event=>{
     console.log('service worker install event');

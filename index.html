@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <title>HealthCare Project</title>
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
-  <link rel="SHORTCUT ICON" href="logo.png"/>
+  <link rel="SHORTCUT ICON" href="logo.png" />
   <link rel="manifest" href="manifest.json">
-        <meta name="theme-color" content="rgb(118, 235, 40)">
-        <link rel="apple-touch-icon" href="logo.png">
+  <meta name="theme-color" content="rgb(118, 235, 40)">
+  <link rel="apple-touch-icon" href="logo.png">
   <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. *
-      /* Optional: Makes the sample page fill the window. */
     html,
     body {
       height: 100%;
@@ -20,15 +16,66 @@
       padding: 0;
       font-family: monospace !important;
     }
+
+    #bg {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      top: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(bg.jpg);
+      background-position: top;
+      filter: brightness(0.5) !important;
+
+    }
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      padding-top: 2vw;
+      color: #ffffff;
+    }
+
+    .main {
+      top: 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+
+    button {
+      border: #ffffff 1px solid !important;
+      border-radius: 10px;
+      padding: 3vw;
+      background-color: #5b64c1;
+      height: 10vw;
+      color: #ffffff;
+      width: 45vw;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
   </style>
 </head>
 
-<body style="background-color: #3de228;"><center>
-  <h1>HealthCare Project</h1><br><Br>
-  <button style="background-color: #5b64c1;border: none;height: 10vw;color: #ffffff;" onclick="hosploc()">Get Near by hospital</button>
-<div id="loc"></div>
-</center>
-<script src="index.js"></script>
+<body>
+  <div id="bg"></div>
+  <center>
+    <div class="main">
+      <h1>HealthCare Project</h1><br><Br><br><br>
+      <button onclick="hosploc()">Find Near
+        by hospital</button><br><br><bR>
+          <button>
+            <a href="ordermedicineonline.html">Order medicine online</a>
+          </button><br><br><br>
+      <button><a href="tel:108">Call an Ambulance</a></button>
+      <div id="loc"></div>
+    </div>
+  </center>
+  <script src="index.js"></script>
 </body>
 
 </html>
