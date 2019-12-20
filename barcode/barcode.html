@@ -46,7 +46,7 @@ function writeUserData(code,timestamp) {
 
 <script>
   const preobj=document.getElementById('object');
-const dfref=firebase.database().ref().child('object');
+const dfref=firebase.database().ref('user/',1234).child('object');
 dfref.on('value',snap=>{
   preobj.innerText=JSON.stringify(snap.val() ,null, 3);
 });
