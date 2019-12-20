@@ -31,6 +31,8 @@
 <script>
   const preobj=document.getElementById('object');
 const dfref=firebase.database().ref().child('object');
-dfref.on('value', snap => console.log( snap.val()));
+dfref.on('value',snap=>{
+  preobj.innerText=JSON.stringify(snap.val() ,null, 3);
+});
 </script>
 </html>
