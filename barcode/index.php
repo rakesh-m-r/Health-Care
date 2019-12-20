@@ -3,7 +3,7 @@
 $barcode=$_GET[barcode];
 ?>
 <html>
-<body
+<body>
 <form>
 <input type="text">
 <input type="submit">
