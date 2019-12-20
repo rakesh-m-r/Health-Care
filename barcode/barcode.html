@@ -1,12 +1,14 @@
 
 <html>
+  <title>barcodeproject-658b5</title>
 <body style="color:black">
+
   <pre id="object">
 
   </pre>
 </body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -29,6 +31,6 @@
 <script>
   const preobj=document.getElementById('object');
 const dfref=firebase.database().ref().child('object');
-dfref.on('value',snap=>console.log(snap.val()));
+dfref.on('value', snap => console.log( snap.val()));
 </script>
 </html>
