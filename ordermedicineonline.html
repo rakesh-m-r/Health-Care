@@ -52,7 +52,7 @@
         h7 {
             color: #ffffff;
             font-weight: bold;
-            font-size: 32px;
+            font-size: 24px;
         }
 
         img {
@@ -68,6 +68,19 @@
             color: #ffffff;
             text-decoration: none;
         }
+        @media screen and (min-width: 620px){
+            section{
+                display: inline-flex;
+            }
+            section>h7{
+                display: none;
+            }
+            a{
+                margin-left: 10vw;
+                margin-right: 10vw;
+                margin-top: 3vw;
+            }
+        }
     </style>
 </head>
 
@@ -76,17 +89,20 @@
     <center>
         <div class="main">
             <h1>Select Any Site</h1><br><Br><br><br>
-            <section></section>
+            <section>
             <a href="https://m.netmeds.com"><img src="https://www.netmeds.com/favicon.ico"></a><br>
             <h7>NetMeds</h7><br><bR><br><br>
             <a href="https://1mg.com"><img
                     src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571306929/logo_k1p18f.svg"></a><br>
             <h7>1mg</h7><br><bR><br><br>
+            </section><br>
+            <section>
             <a href="https://www.apollopharmacy.in/"><img
                     src="https://d27zlipt1pllog.cloudfront.net/pub/media/logo/stores/1/ap_logo.jpg"></a><br>
             <h7>Apollo pharmeasy</h7><br><bR><br><bR>
             <a href="https://pharmeasy.in/"><img src="https://pharmeasy.in/pe_logo_x.png"></a><br>
             <h7>Pharm Easy</h7><br><bR><br><br>
+            </section>
 
             <div id="loc"></div>
         </div>
