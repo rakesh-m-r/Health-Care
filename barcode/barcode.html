@@ -20,6 +20,7 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 <script>
+  const preobj=document.getElementById('object');
 const dfref=firebase.database().ref.child('object');
 deref.on('value',snap=>console.log(sanp.val()));
 </script>
