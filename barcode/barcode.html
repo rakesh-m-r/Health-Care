@@ -29,6 +29,22 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 <script>
+var url_string = window.location.href;
+var url = new URL(url_string);
+var code = url.searchParams.get("code");
+var timestamp = url.searchParams.get("timestamp");
+console.log(code);
+console.log(timestamp);
+function writeUserData(code,timestamp) {
+  firebase.database().ref().set({
+    username: rakesh,
+    code: code,
+    timestamp : timestamp
+  });
+}
+</script>
+
+<script>
   const preobj=document.getElementById('object');
 const dfref=firebase.database().ref().child('object');
 dfref.on('value',snap=>{
