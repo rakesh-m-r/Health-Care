@@ -66,29 +66,56 @@
       color: #ffffff;
       text-decoration: none;
     }
-    .loader{
+
+    .loader {
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.1);
     }
-    #loader>img{
+
+    #loader>img {
       height: 20vh;
       width: 30vw;
-      margin-top: 40vh;
+    }
+
+    #rotate2 {
+      margin-top: 20vh;
       margin-left: 35vw;
       position: absolute;
       animation: rotate1 1s ease-in-out 60 normal none;
     }
+
     @keyframes rotate1 {
-  from { transform: rotate(0); }
-  to   { transform: rotate(360deg); }
-}
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #bgbot {
+      position: relative;
+      width: 100vw !important;
+      object-fit: fill;
+      height: auto !important;
+      margin-bottom: 0px !important;
+    }
+    .bot{
+      position: fixed;
+      bottom: 0px ;
+      height: auto;
+    }
   </style>
 </head>
 
 <body onload="loader()">
   <div class="loader" id="loader">
-    <img src="logo.png">
+    <img id="rotate2" src="logo.png"><br>
+    <div class="bot">
+      <img id="bgbot" src="bgb.svg">
+    </div>
   </div>
   <div id="bg"></div>
   <center>
@@ -106,15 +133,15 @@
   <script src="index.js"></script>
 </body>
 <script>
-  document.getElementById('bg').style="display: none";
-  document.getElementById('main').style="display: none";
-  function loader(){
-    setTimeout(loaded,3000);
+  document.getElementById('bg').style = "display: none";
+  document.getElementById('main').style = "display: none";
+  function loader() {
+    setTimeout(loaded, 300000);
   }
-  function loaded(){
-    document.getElementById('bg').style="display: inherited";
-    document.getElementById('loader').style="display: none;";
-    document.getElementById('main').style="display: inherited";
+  function loaded() {
+    document.getElementById('bg').style = "display: inherited";
+    document.getElementById('loader').style = "display: none;";
+    document.getElementById('main').style = "display: inherited";
   }
 </script>
 
