@@ -39,11 +39,12 @@ console.log(timestamp);
     code: code,
     timestamp : timestamp
   });
+
 </script>
 
 <script>
   const preobj=document.getElementById('object');
-const dfref=firebase.database().ref('user/').child('object');
+const dfref=firebase.database().ref('user/').child('rakesh');
 dfref.on('value',snap=>{
   preobj.innerText=JSON.stringify(snap.val() ,null, 3);
 });
