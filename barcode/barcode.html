@@ -36,8 +36,7 @@ var timestamp = url.searchParams.get("timestamp");
 console.log(code);
 console.log(timestamp);
 function writeUserData(code,timestamp) {
-  firebase.database().ref().set({
-    username: rakesh,
+  firebase.database().ref('user/').set({
     code: code,
     timestamp : timestamp
   });
