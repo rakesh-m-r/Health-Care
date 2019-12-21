@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta name="description" content="project created for the build for india compitation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   <style>
     html,
     body {
@@ -84,7 +85,16 @@
       position: absolute;
       animation: rotate1 1s ease-in-out 60 normal none;
     }
-
+    .title {
+      margin-top: 40vh;
+      font-size: larger;
+      font-weight: bolder;
+      font-family: 'Bree Serif', serif;
+      width: 30vw !important;
+      text-align: center;
+      margin-left: 35vw;
+      position: absolute;
+    }
     @keyframes rotate1 {
       from {
         transform: rotate(0);
@@ -113,6 +123,8 @@
 <body onload="loader()">
   <div class="loader" id="loader">
     <img id="rotate2" src="logo.png"><br>
+    <br><br>
+    <div class="title">HealthCare</div>
     <div class="bot">
       <img id="bgbot" src="bgb.svg">
     </div>
