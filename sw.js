@@ -15,7 +15,8 @@ const resourcesToPrecache=[
     'index.js',
     'logo.png',
     'bg.jpg',
-    'ordermedicineonline.html'
+    'ordermedicineonline.html',
+    'bgb.svg'
 ];
 self.addEventListener('install',event=>{
     console.log('service worker install event');
