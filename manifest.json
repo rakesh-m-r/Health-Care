@@ -15,8 +15,8 @@
       }
     ],
     "start_url": "https://mysite723.tk",
-    "background_color": "#fff",
+    "background_color": "skyblue",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "skyblue"
+    "theme_color": "transparent"
   }
