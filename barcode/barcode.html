@@ -49,4 +49,15 @@ dfref.on('value',snap=>{
   console.log(JSON.stringify(snap.val() ,null, 3));
 });
 </script>
+<script>
+preobj.textContent="<table><th><tr>code</tr><tr>timestamp</tr></th>"
+  firebase.database().ref('ReferernceName').once('value',   function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var childKey = childSnapshot.key;
+      var childData = childSnapshot.val();
+      preobj.textContent="<tr><td>"+childData+"</td><td>";
+    });
+  });
+  
+</script>
 </html>
