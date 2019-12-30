@@ -4,19 +4,19 @@
     "description": "Calculate Basic Math",
     "icons": [
       {
-        "src": "logo.png",
+        "src": "Vector.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "logo.png",
+        "src": "Vector.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
     "start_url": "https://mysite723.tk",
-    "background_color": "rgb(118, 235, 40)",
+    "background_color": "skyblue",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "rgb(118, 235, 40)"
+    "theme_color": "transparent"
   }
