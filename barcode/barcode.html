@@ -46,7 +46,7 @@ console.log(timestamp);
   const preobj=document.getElementById('object');
 const dfref=firebase.database().ref('user/').child('rakesh');
 dfref.on('value',snap=>{
-  preobj.innerText=JSON.stringify(snap.val() ,null, 3);
+  console.log(JSON.stringify(snap.val() ,null, 3));
 });
 </script>
 </html>
