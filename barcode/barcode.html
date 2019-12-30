@@ -35,7 +35,7 @@ var code = url.searchParams.get("code");
 var timestamp = url.searchParams.get("timestamp");
 console.log(code);
 console.log(timestamp);
-  firebase.database().ref('user/rakesh').set({
+  firebase.database().ref('user/rakesh').push({
     code: code,
     timestamp : timestamp
   });
