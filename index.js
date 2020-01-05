@@ -12,7 +12,6 @@ window.addEventListener('beforeinstallPrompt',(e)=>{
   e.preventDefault();
   deferredPrompt=e;
   btnAdd.style.display='block';
-btnAdd.style.position=' absolute';
 });
 
 
