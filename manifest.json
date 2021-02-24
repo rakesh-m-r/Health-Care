@@ -14,7 +14,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "https://mysite723.tk",
+    "start_url": "/index.html",
     "background_color": "skyblue",
     "display": "standalone",
     "scope": "/",
